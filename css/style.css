@@ -1,0 +1,55 @@
+@charset "UTF-8";
+#wrap {width:1200px;height:700px;margin:0 auto;text-align:center;}
+#wrap #header { z-index:3; position: relative; width:100%;height:100px;line-height:100px;}
+#wrap #header .left-box  {float:left;width:200px;height:100%;background:rgba(0,150,0, .2);}
+#wrap #header .right-box {float:left;width:1000px;height:100%;background:rgba(0,0,150, .2);}
+#wrap #header .right-box #nav {width:100%;height:50px;margin:25px 0;line-height:100%;text-align:right;}
+#wrap #header .right-box #nav > ul {height:100%;display:inline-block;margin-right:20px;}
+#wrap #header .right-box #nav > ul > li {float:left;width:180px;height:100%;}
+#wrap #header .right-box #nav > ul > li > a {display:block;width:100%;height:100%;text-align:center;line-height:50px;background:#fff;color:#000; font-size: 15px; font-weight: 600; transition:all .3s;}
+#wrap #header .right-box #nav > ul > li > a.on {background-color:#000;color:#fff; }
+
+/* 서브메뉴 LNB */
+#wrap #header .right-box #nav > ul > li .sub {width:100%; height:0px; overflow: hidden; transition: all .2s ease-in-out;}
+#wrap #header .right-box #nav > ul > li .sub.on {height:180px;  transition: all .4s ease-in;}
+#wrap #header .right-box #nav > ul > li .sub ul {width: 100%;}
+#wrap #header .right-box #nav > ul > li .sub ul li {width: 100%; border-top:1px solid #ddd;}
+#wrap #header .right-box #nav > ul > li .sub ul li a { display:block; width: 100%; line-height: 45px; text-align: center; background: #fff; color:#555; font-size: 14px;  transition: all 0.3s;}
+#wrap #header .right-box #nav > ul > li .sub ul li a:hover { background: #000; color:#fff;}
+
+
+
+
+/* 메인 */
+#wrap #main {z-index:2; position: relative;width:100%;height:500px;}
+#wrap #main #section1 {width:100%;height:300px;background:rgba(200,0,200, .2);line-height:300px;}
+#wrap #main #section1 .container {width:100%; height:100%;}
+#wrap #main #section1 .container .view {width:100%; height:100%; overflow: hidden;}
+#wrap #main #section1 .container .view .wraper {position: relative; left:0px; width:4800px; height:100%; transition: all .5s ease-in-out;}
+#wrap #main #section1 .container .view .wraper li {float:left; width:1200px; height:100%;}
+#wrap #main #section1 .container .view .wraper .slide1 {width:1200px; background: url(../img/pasta-1181189_1920.jpg) no-repeat 50% 50%; background-size: cover;}
+#wrap #main #section1 .container .view .wraper .slide2 {width:1200px; background: url(../img/raspberries-5576401_1920.jpg) no-repeat 50% 50%; background-size: cover;}
+#wrap #main #section1 .container .view .wraper .slide3 {width:1200px; background: url(../img/raspberry-2023404_1920.jpg) no-repeat 50% 50%; background-size: cover;}
+#wrap #main #section1 .container .view .wraper .slide4 {width:1200px; background: url(../img/waffles-5192625_1920.jpg) no-repeat 50% 50%; background-size: cover;}
+
+#wrap #main #section1 .container .prev-btn-wrap  {z-index:2;position:absolute;left:0px;top:25%; border-left:2px solid #fff;border-bottom:2px solid #fff; margin-left:40px; width:60px; height:60px; transform: rotate(45deg);}
+#wrap #main #section1 .container .prev-btn-wrap a {display:block;width:60px; height:60px; cursor: pointer;}
+#wrap #main #section1 .container .next-btn-wrap  {z-index:2;position:absolute;right:0px;top:25%; border-right:2px solid #fff;border-top:2px solid #fff; margin-right:40px; width:60px; height:60px; transform: rotate(45deg);}
+#wrap #main #section1 .container .next-btn-wrap a {display:block;width:60px; height:60px; cursor: pointer;}
+
+
+#wrap #main #section2 {width:100%;height:200px;line-height:200px;}
+#wrap #main #section2 .left-box   {float:left;width:400px;height:100%;background:rgba(0,150,150, .3);}
+#wrap #main #section2 .center-box {float:left;width:400px;height:100%;background:rgba(150,150,0, .3);}
+#wrap #main #section2 .right-box  {float:left;width:400px;height:100%;background:rgba(150,0,150, .3);}
+
+/* 푸터 */
+#wrap #footer {z-index:1; position: relative;width:100%;height:100px;line-height:100px;}
+#wrap #footer .left-box   {float:left;width:200px;height:100%;background:rgba(0,100,0, .2);}
+#wrap #footer .center-box {float:left;width:800px;height:100%;background:rgba(0,0,100, .2);}
+#wrap #footer .right-box  {float:left;width:200px;height:100%;background:rgba(0,100,100, .2);}
+
+#wrap table {width:200px; margin:0 auto; border-collapse: collapse;}
+#wrap table tr {}
+#wrap table tr th {display:block; height:20px; margin: 10px 0 10px 0;}
+#wrap table tr td {border:2px solid #ddd; height:50px; font-size: 20px; text-align: center;}
